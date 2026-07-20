@@ -437,7 +437,7 @@ const replacements = [
 	[/X\\/g,	"ħ"],
 	[/X/g,		"χ"],
 	[/Y/g,		"ʏ"],
-		[/S\\/g,	"ʆ"],
+	[/Z\\/g,	"ʓ"],
 	[/Z/g,		"ʒ"],
 	//Demonic symbols
 	[/@\\/g,	"ɘ"],
