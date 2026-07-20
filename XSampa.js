@@ -85,6 +85,9 @@ const replacements = [
 	[/\*\|/g,	"も"],
 	[/\*\}/g,	"ゃ"],
 	[/\*\~/g,	"や"],
+	//Advanced articulation
+	[/_\+\\/g,	"˖"],
+	[/_\+/g,	"̟"],
 	//Velarized /l/
 	[/l_e/g,	"ɫ"],
 	//Spaced diacritics
@@ -424,6 +427,7 @@ const replacements = [
 	[/Q/g,		"ɒ"],
 	[/R\\/g,	"ʀ"],
 	[/R/g,		"ʁ"],
+	[/S\\/g,	"ʆ"],
 	[/S/g,		"ʃ"],
 	[/T/g,		"θ"],
 	[/U\\/g,	"ᵿ"],
@@ -433,6 +437,7 @@ const replacements = [
 	[/X\\/g,	"ħ"],
 	[/X/g,		"χ"],
 	[/Y/g,		"ʏ"],
+		[/S\\/g,	"ʆ"],
 	[/Z/g,		"ʒ"],
 	//Demonic symbols
 	[/@\\/g,	"ɘ"],
