@@ -273,14 +273,14 @@ const replacements = [
 	[/_R_F/g,	"᷈"],
 	[/\_u/g,	"˭"],
 	[/\_n\\/g,	"̾"],
-	[/\_m\\/g,	"͊"],
+	[/\_~\\/g,	"͊"],
 	[/\_p\\/g,	"̎"],
 	[/\_p/g,	"͈"],
-	[/\_P\\/g,	"͍"],
+	[/\_C/g,	"͍"],
 	[/\_P/g,	"͉"],
-	[/\_-\_-/g,	"͇"],
+	[/\_a\\/g,	"͇"],
 	[/\_f/g,	"͎"],
-	[/\)\\/g,	"͢"],
+	[/\$/g,		"͢"],
 	[/\)/g,		"͡"],
 	[/\(/g,		"͜"],
 	[/_?=/g,	"̩"],
@@ -316,7 +316,7 @@ const replacements = [
 	[/_l/g,		"ˡ"],
 	[/_M/g,		"̄"],
 	[/_m/g,		"̻"],
-	[/_N/g,		"̼"],
+	[/_E/g,		"̼"],
 	[/_n/g,		"ⁿ"],
 	[/_O/g,		"̹"],
 	[/_o\\/g,	"˕"],
@@ -335,8 +335,8 @@ const replacements = [
 	[/D_J/g,	"↓"],
 	[/\"/g,		"ˈ"],
 	[/\%/g,		"ˌ"],
-	[/\^_J/g,	"↗"],
-	[/v_J/g,	"↘"],
+	[/<R>_J/g,	"↗"],
+	[/<F>_J/g,	"↘"],
 	//Symbols
 	[/0\\/g,	"◌"],
 	[/0/g,		"∅"],
@@ -346,33 +346,40 @@ const replacements = [
 	[/k_J/g,	"Ʞ"],
 	[/<_J/g,	"Ƈ"],
 	*/
+	
+	//Changed inputs from Z-SAMPA. https://web.archive.org/web/20200115191232/http://www.kneequickie.com/kq/Z-SAMPA
+	//Pretty awesome and nerdy stuff.
+	
 	//Cool laterals
 	[/K`/g,	"ꞎ"],
-	[/L\\_J/g,	"𝼄"],
-	[/L_J/g,	"𝼆"],
-	//extIPA stuff (more laterals...)
-	[/s_J/g,	"ʪ"],
-	[/z_J/g,	"ʫ"],
+	[/F\\/g,	"𝼄"],
+	[/C\\/g,	"𝼆"],
+	//extIPA stuff
+	[/S_J/g,	"ʆ"],
+	[/Z_J/g,	"ʓ"],
+	[/S\\/g,	"ʪ"],
+	[/Z\\/g,	"ʫ"],
 	[/K\\`/g,	"𝼅"],
-	[/f_J/g,	"ʩ"],
-	[/F_J/g,	"𝼀"], //disgusting letter
+	[/f\\`/g,	"𝼀"], //disgusting letter
+	[/f\\/g,	"ʩ"],
 	[/q_J/g,	"ꞯ"],
 	[/g_J/g,	"𝼂"],
-	[/T_J/g,	"ʭ"],
-	[/W_J/g,	"ʬ"],
-	[/!_J/g,	"¡"],
+	[/t\\/g,	"ʭ"],
+	[/w\\/g,	"ʬ"],
 	//Apical vowels
 	[/M_J/g,	"ɿ"],
 	[/u_J/g,	"ʮ"],
 	[/1_J/g,	"ʅ"],
 	[/\}_J/g,	"ʯ"],
 	//Sinological vowels
-	[/i_J/g,	"ɩ"],
-	[/U_J/g,	"ɷ"],
-	[/e_J/g,	"ᴇ"],
-	[/o_J/g,	"ꭥ"],
-	[/w_J/g,	"ω"],
-	[/a_J/g,	"ᴀ"],
+	[/i\\/g,	"ɩ"],
+	[/m\\/g,	"ɷ"],
+	[/E\\/g,	"ᴇ"],
+	[/o\\/g,	"ꭥ"],
+	[/W\\/g,	"ω"],
+	[/a\\/g,	"ᴀ"],
+	//Z-Sampa nonsense (not derogatory)
+	[/d\\/g,	"ᴅ"],
 	//Alveolopalatals
 	[/d_J/g,	"ȡ"],
 	[/t_J/g,	"ȶ"],
@@ -427,7 +434,6 @@ const replacements = [
 	[/Q/g,		"ɒ"],
 	[/R\\/g,	"ʀ"],
 	[/R/g,		"ʁ"],
-	[/S\\/g,	"ʆ"],
 	[/S/g,		"ʃ"],
 	[/T/g,		"θ"],
 	[/U\\/g,	"ᵿ"],
@@ -437,7 +443,6 @@ const replacements = [
 	[/X\\/g,	"ħ"],
 	[/X/g,		"χ"],
 	[/Y/g,		"ʏ"],
-	[/Z\\/g,	"ʓ"],
 	[/Z/g,		"ʒ"],
 	//Demonic symbols
 	[/@\\/g,	"ɘ"],
@@ -462,8 +467,8 @@ const replacements = [
 	[/<\\/g,	"ʢ"],
 	[/>\\/g,	"ʡ"],
 	//Other
-	[/\</g,		"⟨"],
-	[/\>/g,		"⟩"],
+	[/<<>/g,	"⟨"],
+	[/<>>/g,	"⟩"],
 	[/\'|(_j)/g,"ʲ"],
 	[/:\\/g,	"ˑ"],
 	[/:/g,		"ː"],
